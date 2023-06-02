@@ -1,0 +1,60 @@
+{
+  "nodes":
+  [
+    {
+      "name":"simpleMultiply"
+      , "id":977794712
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"simpleMultiply.B0"
+          , "id":978001184
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":980530704
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"simpleMultiply.B1"
+          , "id":978001920
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":980647392
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"simpleMultiply.B2"
+          , "id":978002000
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":980929536
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 3"
+              , "id":981173872
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

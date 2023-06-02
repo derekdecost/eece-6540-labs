@@ -1,0 +1,17 @@
+------------------------------------------------
+ERROR: You must open a project before you can use this command.
+
+    while executing
+"set_global_assignment -name SEARCH_PATH $CCIP_AVMM_SRC/hw/rtl"
+    (file "./BBB_ccip_avmm/hw/par/ccip_avmm_addenda.qsf" line 14)
+    invoked from within
+"source "$CCIP_AVMM_SRC/hw/par/ccip_avmm_addenda.qsf""
+    (procedure "add_bbb_assignments" line 4)
+    invoked from within
+"add_bbb_assignments"
+    (file "add_bbb_to_pr_project.tcl" line 30)
+------------------------------------------------
+2023.05.31.18:52:50 Info: Parallel IP Generation is enabled. 
+2023.05.31.18:52:50 Info: Platform Designer will attempt to use 6 processors for parallel IP generation based on available number of processors and the total number of IP to be generated.
+2023.05.31.18:52:50 Info: 
+2023.05.31.18:52:50 Info: Starting: Platform Designer system generation

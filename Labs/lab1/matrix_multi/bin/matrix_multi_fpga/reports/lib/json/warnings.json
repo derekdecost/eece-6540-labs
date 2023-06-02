@@ -1,0 +1,8 @@
+{"rows":[
+{"debug":[[{"filename":"device/matrix_multi.cl"
+,"line":23}]]
+,"details":["Compiler Warning: device/matrix_multi.cl:23: declaring global arguments 'outputC'
+, 'inputA' and 'inputB' with no 'restrict' may lead to low performance for kernel 'simpleMultiply'"]
+,"name":"device/matrix_multi.cl:23: declaring global arguments 'outputC'
+, 'inputA' and 'inputB' with no 'restrict' may lead to low performance for kernel 'simpleMultiply'"}
+]}

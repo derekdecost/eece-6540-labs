@@ -1,0 +1,22 @@
+Compiler Command: aoc device/matrix_multi.cl -o bin/matrix_multi_fpga.aocx -board=pac_a10
+Compiler Warning: device/matrix_multi.cl:23: declaring global arguments 'outputC', 'inputA' and 'inputB' with no 'restrict' may lead to low performance for kernel 'simpleMultiply'
+
+!===========================================================================
+! The report below may be inaccurate. A more comprehensive           
+! resource usage report can be found at matrix_multi_fpga/reports/report.html    
+!===========================================================================
+
++--------------------------------------------------------------------+
+; Estimated Resource Usage Summary                                   ;
++----------------------------------------+---------------------------+
+; Resource                               + Usage                     ;
++----------------------------------------+---------------------------+
+; Logic utilization                      ;   28%                     ;
+; ALUTs                                  ;   18%                     ;
+; Dedicated logic registers              ;   12%                     ;
+; Memory blocks                          ;   21%                     ;
+; DSP blocks                             ;    0%                     ;
++----------------------------------------+---------------------------;
+System name: matrix_multi_fpga
+
+
