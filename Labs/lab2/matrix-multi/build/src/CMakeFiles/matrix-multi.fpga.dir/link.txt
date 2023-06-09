@@ -1,0 +1,1 @@
+/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/bin/dpcpp    -rdynamic -fintelfpga -Xshardware -Xsboard=intel_a10gx_pac:pac_a10  CMakeFiles/matrix-multi.fpga.dir/matrix-multi.cpp.o  -o ../matrix-multi.fpga 

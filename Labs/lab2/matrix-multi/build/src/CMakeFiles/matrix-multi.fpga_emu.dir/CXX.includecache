@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/u193422/eece-6540-labs/Labs/lab2/matrix-multi/src/matrix-multi.cpp
+CL/sycl.hpp
+-
+array
+-
+iostream
+-
+dpc_common.hpp
+/home/u193422/eece-6540-labs/Labs/lab2/matrix-multi/src/dpc_common.hpp
+sycl/ext/intel/fpga_extensions.hpp
+-
+

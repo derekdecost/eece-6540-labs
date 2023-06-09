@@ -39,7 +39,7 @@ class Timer {
   std::chrono::steady_clock::time_point start;
 };
 
-static const char* inputImagePath = "./Images/cat.bmp";
+static const char* inputImagePath = "./Images/cat-face.bmp";
 
 #define IMAGE_SIZE (720*1080)
 constexpr size_t array_size = IMAGE_SIZE;
@@ -88,13 +88,15 @@ void ImageRotation(queue &q, float *image_in, float *image_out,
 	// calculate location of data to move int (ix, iy)
         // output decomposition as mentioned on Page 17 of the slides
 	// TODO: calculate xpos and ypos properly
-        float xpos = 0; 
-        float ypos = 0;
+        float x0 = 0 * ImageCols / 2;
+        float y0 = 0 * ImageRows / 2;
+        float xpos = (((float)ix - x0) * cosTheta) + (((float)iy - y0) * sinTheta);
+        float ypos = (-1 * ((float)ix - x0) * sinTheta) + (((float)iy - y0) * cosTheta);
 
 	/* Bound checking to make sure xpos and ypos are in range */
 	// TODO: 
-        if(((int)xpos >= 0) && (1/* TODO: xpos in range */) &&
-           ((int)ypos >= 0) && (1/* TODO: ypos in range */) )
+        if(((int)xpos >= 0) && ((int)xpos < ImageCols) &&
+           ((int)ypos >= 0) && ((int)ypos < ImageRows) )
         {
            /* read (ix,iy) src data and store at (xpos,ypos) in dest data
             * in this case, because we rotate about the origin and
@@ -102,7 +104,7 @@ void ImageRotation(queue &q, float *image_in, float *image_out,
             * unique for each input (ix, iy) and so each work-item can
             * write its results independently */
 	   // TODO: calculate source and destination pixel location properly
-           dstPtr[0] = srcPtr[0];
+           dstPtr[((int)ypos * ImageCols) + (int)xpos] = srcPtr[(iy * ImageCols) + ix];
         }
       }
     );
