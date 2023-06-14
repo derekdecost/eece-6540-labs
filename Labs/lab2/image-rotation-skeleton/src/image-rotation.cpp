@@ -142,15 +142,15 @@ int main() {
   // Query about the platform
   unsigned number = 0;
   auto myPlatforms = platform::get_platforms();
+
   // loop through the platforms to poke into
   for (auto &onePlatform : myPlatforms) {
-    std::cout << ++number << " found .." << std::endl << "Platform: " 
-    << onePlatform.get_info<info::platform::name>() <<std::endl;
+    std::cout << ++number << " found .." << std::endl << "Platform: " << onePlatform.get_info<info::platform::name>() <<std::endl;
+    
     // loop through the devices
     auto myDevices = onePlatform.get_devices();
     for (auto &oneDevice : myDevices) {
-      std::cout << "Device: " 
-      << oneDevice.get_info<info::device::name>() <<std::endl;
+      std::cout << "Device: " << oneDevice.get_info<info::device::name>() <<std::endl;
     }
   }
   std::cout<<std::endl;
@@ -159,10 +159,12 @@ int main() {
   /* Read in the BMP image */
   hInputImage = readBmpFloat(inputImagePath, &imageRows, &imageCols);
   printf("imageRows=%d, imageCols=%d\n", imageRows, imageCols);
+  
   /* Allocate space for the output image */
   hOutputImage = (float *)malloc( imageRows*imageCols * sizeof(float) );
-  for(i=0; i<imageRows*imageCols; i++)
+  for(i=0; i<imageRows*imageCols; i++) {
     hOutputImage[i] = 1234.0;
+  }
 
   Timer t;
 
@@ -170,8 +172,7 @@ int main() {
     queue q(d_selector, dpc_common::exception_handler);
 
     // Print out the device information used for the kernel code.
-    std::cout << "Running on device: "
-              << q.get_device().get_info<info::device::name>() << "\n";
+    std::cout << "Running on device: " << q.get_device().get_info<info::device::name>() << "\n";
 
     // Image convolution in DPC++
     ImageRotation(q, hInputImage, hOutputImage, imageRows, imageCols, sinTheta, cosTheta);
