@@ -1,4 +1,5 @@
 #include <sycl/sycl.hpp>
+#include <sycl/ext/intel/fpga_extensions.hpp>
 #include <iostream>
 #include <math.h>
 #include <stdlib.h>
@@ -16,7 +17,7 @@
 using namespace sycl;
 
 // Number of samples
-constexpr int size_n = 10000;  // Must be greater than size_wg
+constexpr int size_n = 1500000;  // Must be greater than size_wg
 // Size of parallel work groups
 constexpr int size_wg = 32;
 // Number of parallel work groups
@@ -39,7 +40,7 @@ SYCL_EXTERNAL int GetPixelIndex(float x, float y) {
 // Returns a random float between -1.0 and 1.0
 float GetRandCoordinate() { return (float)rand() / (RAND_MAX / 2.0) - 1.0; }
 
-// Creates an array representing the image data and inscribes a circle
+//NOTE: Draws the graphical image.
 void DrawPlot(rgb image_plot[]) {
   for (int i = 0; i < img_dimensions * img_dimensions; ++i) {
     // calculate unit coordinates relative to the center of the image
@@ -68,7 +69,13 @@ float MonteCarloPi(rgb image_plot[]) {
   }
 
   // Set up sycl queue
+  //NOTE: Uncomment for use with non-FPGA devices. 
   queue q(default_selector_v);
+
+  // Creates an array representing the image data and inscribes a circle
+  // ext::intel::fpga_emulator_selector d_selector;
+  // //ext::intel::fpga_selector d_selector;
+  // queue q(d_selector);
   std::cout << "\nRunning on "
             << q.get_device().get_info<sycl::info::device::name>() << "\n";
 
