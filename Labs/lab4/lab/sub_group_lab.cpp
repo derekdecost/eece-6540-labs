@@ -25,9 +25,9 @@ int main() {
 
   //# Kernel task to compute sub-group sum and save to sg_data array
     
-  //# STEP 1 : set fixed sub_group size of value S in the kernel below
+  //# STEP 1 : set fixed sub_group size of value S in the kernel below [DONE]
 
-  q.parallel_for(nd_range<1>(N, B), [=](nd_item<1> item) {
+  q.parallel_for(nd_range<1>(N, B), [=](nd_item<1> item)[[intel::reqd_sub_group_size(S)]] {
     auto sg = item.get_sub_group();
     auto i = item.get_global_id(0);
 
@@ -35,15 +35,17 @@ int main() {
       
     //# YOUR CODE GOES HERE 
 
-
-
+    //# Add all elements in sub_group using sub_group algorithm
+    int result = reduce_over_group(sg, data[i], plus<>());
       
     //# STEP 3 : save each sub-group sum to sg_data array
     
     //# YOUR CODE GOES HERE 
-      
-
-
+//#     auto group_index = sg.get_global_id(0);
+//#     sg_data[group_index] = result;
+    if (sg.get_local_id()[0] == 0) {
+      sg_data[i/32] = result;
+    } 
   }).wait();
 
   //# print sg_data array
@@ -54,7 +56,8 @@ int main() {
   int sum = 0;
 
   //# YOUR CODE GOES HERE 
-
+  for (int i = 0; i < N/S; i++)
+    sum += sg_data[i];
  
 
   std::cout << "\nSum = " << sum << "\n";

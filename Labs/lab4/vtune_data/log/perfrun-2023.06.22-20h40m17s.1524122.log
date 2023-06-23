@@ -1,0 +1,155 @@
+11 [140148086355840] INFO perfrun.launcher <> - Launcher main begin
+17 [140148086355840] INFO perfrun.launcher <> - MessageCatalogInit finished
+17 [140148086355840] INFO perfrun.launcher <> - Launcher instance created
+17 [140148086355840] INFO perfrun.launcher <> - argc = 7; cmdline = /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/bin64/amplxe-runss --ui-output-format xml --ui-output-fd 5 --option-file /home/u193422/eece-6540-labs/Labs/lab4/vtune_data/config/runsa.options 
+63 [140148086355840] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+63 [140148086355840] INFO perfrun.launcher <> - create file finder object
+63 [140148086355840] INFO perfrun.launcher <> - create a result directory: pattern = /home/u193422/eece-6540-labs/Labs/lab4/vtune_data pid = 4294967295
+67 [140148086355840] INFO perfrun.sdk <> - checked that the directory /home/u193422/eece-6540-labs/Labs/lab4/vtune_data is a local directory
+67 [140148086355840] INFO perfrun.sdk <> - the directory /home/u193422/eece-6540-labs/Labs/lab4/vtune_data is located on a share or its FS ID is unknown 26985
+67 [140148086355840] INFO perfrun.sdk <> - checked that the directory /home/u193422/tmp/amplxe-tmp-u193422 is a local directory
+68 [140148086355840] INFO perfrun.sdk <> - the directory /home/u193422/tmp/amplxe-tmp-u193422 is located on a share or its FS ID is unknown 26985
+69 [140148086355840] INFO perfrun.launcher <> - create data directory = /home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0
+73 [140148086355840] INFO perfrun.launcher <> - Creating the master collection flag
+78 [140148086355840] INFO perfrun.launcher <> - Done creating the master collection flag
+103 [140148073019136] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+103 [140148073019136] INFO perfrun.sdk <> - Allocating TMU :/home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0/systemcollector-1524122-s019-n016.sc
+109 [140148073019136] INFO perfrun.system <> - Tpss based collection
+111 [140148073019136] INFO perfrun.launcher <> - plugin [ptracecollector] was disabled because it doesn't support the given collection type.
+111 [140148073019136] INFO perfrun.gpu <> - Event consumer configurations: 
+112 [140148073019136] INFO perfrun.sdk <> - Reading value (0) from file: /proc/sys/dev/i915/perf_stream_paranoid
+112 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libigdmd.so.1', lib path: '', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+113 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libmd.so', lib path: '', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+113 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libmd.so.1', lib path: '', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+113 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libigdmd.so.1', lib path: '/usr/local/lib', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+113 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libmd.so', lib path: '/usr/local/lib', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+113 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libmd.so.1', lib path: '/usr/local/lib', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+114 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libigdmd.so.1', lib path: '/opt/intel/opencl', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+114 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libmd.so', lib path: '/opt/intel/opencl', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+114 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libmd.so.1', lib path: '/opt/intel/opencl', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+134 [140148073019136] INFO perfrun.gpu <> - DeviceInfo: address 0:0:2.0 subdevice index 0 preset 1 sampling interval 1000us
+134 [140148073019136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+134 [140148073019136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+134 [140148073019136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+134 [140148073019136] INFO perfrun.mrte <> - system-wide mode is 0
+135 [140148073019136] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+221 [140148073019136] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0
+221 [140148073019136] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=s019-n016
+221 [140148073019136] INFO perfrun.mrte <> - JAVA_TOOL_OPTIONS=-agentlib:amplxe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib32/runtime:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib64/runtime
+221 [140148073019136] INFO perfrun.mrte <> - LD_LIBRARY_PATH=/glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib32/runtime:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib64/runtime:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/tbb/2021.9.0/env/../lib/intel64/gcc4.8:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/rkcommon/1.11.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ospray_studio/0.12.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ospray/2.11.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/openvkl/1.3.2/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/openpgl/0.5.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/oidn/1.4.3/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/mpi/2021.9.0//libfabric/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/mpi/2021.9.0//lib/release:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/mpi/2021.9.0//lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/mkl/2023.1.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/itac/2021.9.0/slib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ispc/1.19.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ipp/2021.8.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ippcp/2021.7.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ipp/2021.8.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/embree/4.0.1/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/dnnl/2023.1.0/cpu_dpcpp_gpu_dpcpp/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/debugger/2023.1.0/gdb/intel64/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/debugger/2023.1.0/libipt/intel64/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/debugger/2023.1.0/dep/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/dal/2023.1.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/lib/x64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/lib/oclfpga/host/linux64/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/compiler/lib/intel64_lin:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ccl/2021.9.0/lib/cpu_gpu_dpcpp
+221 [140148073019136] INFO perfrun.mrte <> - CORECLR_ENABLE_PROFILING=1
+221 [140148073019136] INFO perfrun.mrte <> - CORECLR_PROFILER={AA5E4821-E3B1-479c-B7FF-5AD047D22CED}
+221 [140148073019136] INFO perfrun.mrte <> - CORECLR_PROFILER_PATH=/glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib64/libamplxe_samplingmrte_clrprof_1.0.so
+221 [140148073019136] INFO perfrun.mrte <> - INTEL_MRTE_PROFILER_MODE=mixed
+221 [140148073019136] INFO perfrun.mrte <> - Data directory: /home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0
+221 [140148073019136] INFO perfrun.mrte <> - Mrte plugin is initialized
+221 [140148073019136] INFO perfrun.launcher <> - plugin [emon] was disabled because it doesn't support the given collection type.
+221 [140148073019136] INFO perfrun.launcher <> - plugin [cuscol] was disabled because it doesn't support the given collection type.
+221 [140148073019136] INFO perfrun.launcher <> - plugin [stdsrc] was disabled because it doesn't support the given collection type.
+241 [140148073019136] INFO perfrun.sdk <> - runCmd: /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/bin64/sep -dry-run -ec CPU_CLK_UNHALTED.THREAD:sa=3300000,CPU_CLK_UNHALTED.REF_TSC:sample:sa=3300000,INST_RETIRED.ANY:sample:sa=3300000,CPU_CLK_UNHALTED.DISTRIBUTED:sa=3300000 -experimental
+242 [140148073019136] INFO perfrun.sdk <> - runCmd started PID 1524126
+369 [140148073019136] INFO perfrun.launcher <> - plugin [vtsspp] was disabled because it doesn't support the given collection type.
+369 [140148073019136] INFO perfrun.launcher <> - plugin [perf] was disabled because it doesn't support the given collection type.
+369 [140148073019136] INFO perfrun.launcher <> - plugin [aoclprofile] was disabled because it doesn't support the given collection type.
+369 [140148073019136] INFO perfrun.tpss <> - initialize tpss controller
+369 [140148073019136] INFO perfrun.tpss <> - configure collection mode: value = opencl_ex:nostack|0:0:2.0
+369 [140148073019136] INFO perfrun.tpss <> - configure collection mode: value = opencl:nostack|0:0:2.0
+369 [140148073019136] INFO perfrun.tpss <> - configure collection mode: value = mediasdk:nostack|0:0:2.0
+369 [140148073019136] INFO perfrun.tpss <> - configure collection mode: value = level_zero:nostack|0:0:2.0
+369 [140148073019136] INFO perfrun.tpss <> - default obj-size-min=1024
+369 [140148073019136] INFO perfrun.tpss <> - default hash-table-size=0
+369 [140148073019136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+369 [140148073019136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+369 [140148073019136] INFO perfrun.launcher <> - plugin [parallelfs] was disabled because it doesn't support the given collection type.
+369 [140148073019136] INFO perfrun.launcher <> - plugin [power] was disabled because it doesn't support the given collection type.
+369 [140148073019136] INFO perfrun.launcher <> - plugin [hwloc] was disabled because it doesn't support the given collection type.
+369 [140148073019136] INFO perfrun.launcher <> - plugin [ipmwatch] was disabled because it doesn't support the given collection type.
+369 [140148073019136] INFO perfrun.launcher <> - plugin [os_counters] was disabled because it doesn't support the given collection type.
+369 [140148073019136] INFO perfrun.launcher <> - plugin [l0_metrics] was disabled because it doesn't support the given collection type.
+369 [140148086355840] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib32/runtime:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib64/runtime:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/tbb/2021.9.0/env/../lib/intel64/gcc4.8:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/rkcommon/1.11.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ospray_studio/0.12.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ospray/2.11.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/openvkl/1.3.2/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/openpgl/0.5.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/oidn/1.4.3/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/mpi/2021.9.0//libfabric/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/mpi/2021.9.0//lib/release:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/mpi/2021.9.0//lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/mkl/2023.1.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/itac/2021.9.0/slib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ispc/1.19.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ipp/2021.8.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ippcp/2021.7.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ipp/2021.8.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/embree/4.0.1/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/dnnl/2023.1.0/cpu_dpcpp_gpu_dpcpp/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/debugger/2023.1.0/gdb/intel64/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/debugger/2023.1.0/libipt/intel64/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/debugger/2023.1.0/dep/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/dal/2023.1.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/lib/x64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/lib/oclfpga/host/linux64/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/compiler/lib/intel64_lin:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ccl/2021.9.0/lib/cpu_gpu_dpcpp
+369 [140148086355840] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib32/runtime/libittnotify_collector.so
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib64/runtime/libittnotify_collector.so
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib32/runtime/libittnotify_collector.so
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib64/runtime/libittnotify_collector.so
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: OMP_TOOL_LIBRARIES = /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib32/runtime/libittnotify_collector.so:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib64/runtime/libittnotify_collector.so
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: OMP_TOOL = disabled
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = s019-n016
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: JAVA_TOOL_OPTIONS = -agentlib:amplxe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib32/runtime:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib64/runtime
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib32/runtime:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib64/runtime:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/tbb/2021.9.0/env/../lib/intel64/gcc4.8:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/rkcommon/1.11.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ospray_studio/0.12.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ospray/2.11.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/openvkl/1.3.2/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/openpgl/0.5.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/oidn/1.4.3/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/mpi/2021.9.0//libfabric/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/mpi/2021.9.0//lib/release:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/mpi/2021.9.0//lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/mkl/2023.1.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/itac/2021.9.0/slib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ispc/1.19.0/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ipp/2021.8.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ippcp/2021.7.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ipp/2021.8.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/embree/4.0.1/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/dnnl/2023.1.0/cpu_dpcpp_gpu_dpcpp/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/debugger/2023.1.0/gdb/intel64/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/debugger/2023.1.0/libipt/intel64/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/debugger/2023.1.0/dep/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/dal/2023.1.0/lib/intel64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/lib/x64:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/lib/oclfpga/host/linux64/lib:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/compiler/2023.1.0/linux/compiler/lib/intel64_lin:/glob/development-tools/versions/oneapi/2023.1.2/oneapi/ccl/2021.9.0/lib/cpu_gpu_dpcpp
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: CORECLR_ENABLE_PROFILING = 1
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER = {AA5E4821-E3B1-479c-B7FF-5AD047D22CED}
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER_PATH = /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib64/libamplxe_samplingmrte_clrprof_1.0.so
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_PROFILER_MODE = mixed
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: NEOReadDebugKeys = 1
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: EnableDeviceBasedTimestamps = 0
+370 [140148086355840] INFO perfrun.launcher <> - set environment variable: NEOReadDebugKeys = 1
+370 [140148086355840] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+374 [140148086355840] INFO perfrun.launcher <> - Launcher: command line to start before modification = /home/u193422/eece-6540-labs/Labs/lab4/iso3dfd 256 256 256 8 8 8 20 sycl gpu
+382 [140148086355840] INFO perfrun.launcher <> - Launcher: command line to start after modification = /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/bin64/pin -error_file /home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib64/libtpsstool.so -t /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/lib32/libtpsstool.so -server_name tpss_ipc.1524122 -prd_dir /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0 -- /home/u193422/eece-6540-labs/Labs/lab4/iso3dfd 256 256 256 8 8 8 20 sycl gpu
+382 [140148086355840] INFO perfrun.launcher <> - ProcessCreator object was created
+383 [140148086355840] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+384 [140148073019136] INFO perfrun.sdk <> - Reading value (0) from file: /proc/sys/dev/i915/perf_stream_paranoid
+384 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libigdmd.so.1', lib path: '', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+384 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libmd.so', lib path: '', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+384 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libmd.so.1', lib path: '', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+384 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libigdmd.so.1', lib path: '/usr/local/lib', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+384 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libmd.so', lib path: '/usr/local/lib', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+384 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libmd.so.1', lib path: '/usr/local/lib', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+384 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libigdmd.so.1', lib path: '/opt/intel/opencl', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+384 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libmd.so', lib path: '/opt/intel/opencl', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+384 [140148073019136] WARN perfrun.sdk <> - Metrics Discovery library was not found, lib name: 'libmd.so.1', lib path: '/opt/intel/opencl', at file: _sdks/release_posix-x86_64_icl_19.1.2_gnutools_6.3_binutils_2.28/perfrun_1.30.2/include/perfrun1/pluginsdk/metrics_discovery_lib.hpp:828
+427 [140148073019136] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:787
+427 [140148073019136] WARN perfrun.system <> - Folder "/var/run/libvirt/qemu/"doesn't exist, at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:800
+428 [140148073019136] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:204
+428 [140148073019136] WARN perfrun.system <> - Could not start ContainerMapping collector, at file: vcs/perfrun1/plugins/system/src/controller.cpp:448
+455 [140148073019136] INFO perfrun.vdso <> - Helper runtool '/glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/bin32/amplxe-runss -dump-vdso -r /home/u193422/eece-6540-labs/Labs/lab4/vtune_data --tmp-dir /home/u193422/tmp/amplxe-tmp-u193422' returned 1
+563 [140148073019136] INFO perfrun.vdso <> - Helper runtool '/glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/bin64/amplxe-runss -dump-vdso -r /home/u193422/eece-6540-labs/Labs/lab4/vtune_data --tmp-dir /home/u193422/tmp/amplxe-tmp-u193422' returned 0
+563 [140148073019136] INFO perfrun.itt <> - start itt controller for pid #1524128
+564 [140148073019136] INFO perfrun.sdk <> - Allocating TMU :/home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0/gen_metrics0_0_2_0_0.0.cfg
+570 [140148073019136] INFO perfrun.sdk <> - De-allocating TMU: /home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0/gen_metrics0_0_2_0_0.0.cfg
+570 [140148073019136] INFO perfrun.gpu <> - Creating main data processing loop
+570 [140148020811520] INFO perfrun.sdk <> - Allocating TMU :/home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0/gen_metrics0_0_2_0_0.0.vtss
+570 [140148073019136] INFO perfrun.sdk <> - Reading value (1) from file: /proc/sys/kernel/nmi_watchdog
+570 [140148073019136] WARN perfrun.launcher <> - Messenger::say: To enable hardware event-based sampling, VTune Profiler has disabled the NMI watchdog timer. The watchdog timer will be re-enabled after collection completes.
+570 [140148073019136] INFO perfrun.sdk <> - runCmd: /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/bin64/sep -start -experimental -uem timer=10 -em factor=5 -p-state trigger=CPU_CLK_UNHALTED.REF_TSC -out /home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0/sep7f76c41bb700.20230622T204018.552564 -ec INST_RETIRED.ANY:sample:sa=3300000,CPU_CLK_UNHALTED.THREAD:sa=3300000,CPU_CLK_UNHALTED.REF_TSC:sample:sa=3300000,CPU_CLK_UNHALTED.DISTRIBUTED:sa=3300000, -d 0 -uem factor=10
+571 [140148073019136] INFO perfrun.sdk <> - runCmd started PID 1524135
+573 [140148020811520] INFO perfrun.gpu <> - IO stream opening, timer period: 1000000, buffer size: 0 subDevice 0 tile 0
+577 [140148020811520] INFO perfrun.gpu <> - IO stream opened, timer period: 851968, buffer size: 16777216
+1075 [140148073019136] INFO perfrun.tpss <> - start tpss controller for pid #1524128
+1133 [140148086355840] INFO perfrun.launcher <> - Launcher: all plugins were started
+1133 [140148086355840] INFO perfrun.launcher <> - DirectoryMonitor object was created
+1135 [140148086355840] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+1135 [140148086355840] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+1135 [140148086355840] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+1135 [140148086355840] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+1153 [140148086355840] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+7854 [140148086355840] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 0
+7889 [140148073019136] INFO perfrun.itt <> - detach itt controller
+7889 [140148073019136] INFO perfrun.itt <> - detach itt controller done
+7889 [140148073019136] INFO perfrun.gpu <> - Waiting for data collection thread to finish
+7898 [140148020811520] INFO perfrun.sdk <> - De-allocating TMU: /home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0/gen_metrics0_0_2_0_0.0.vtss
+7898 [140148020811520] INFO perfrun.gpu <> - Data collection routine finished
+7899 [140148073019136] INFO perfrun.gpu <> - Data collection thread finished, shutting down the session
+7900 [140148073019136] INFO perfrun.sdk <> - runCmd: /glob/development-tools/versions/oneapi/2023.1.2/oneapi/vtune/2023.1.0/bin64/sep -stop
+7901 [140148073019136] INFO perfrun.sdk <> - runCmd started PID 1524176
+15087 [140148073019136] INFO perfrun.sepdk <> - Sampling successfully stopped.
+
+15087 [140148073019136] INFO perfrun.sepdk <> - Waiting for main SEP process (1524135) to finish...
+15187 [140148073019136] INFO perfrun.sepdk <> - Main SEP process finished
+15188 [140148073019136] INFO perfrun.tpss <> - stop tpss controller
+15192 [140148073019136] INFO perfrun.sdk <> - Reading value (0) from file: /proc/sys/dev/i915/perf_stream_paranoid
+15196 [140148073019136] INFO perfrun.sdk <> - De-allocating TMU: /home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0/systemcollector-1524122-s019-n016.sc
+15196 [140148073019136] INFO perfrun.system <> - closed the system trace file: /home/u193422/eece-6540-labs/Labs/lab4/vtune_data/data.0/systemcollector-1524122-s019-n016.sc
+15196 [140148086355840] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+15196 [140148086355840] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+15196 [140148086355840] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+15196 [140148086355840] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+15196 [140148086355840] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:226
+15204 [140148086355840] INFO perfrun.launcher <> - Application exit code: 0
+15204 [140148086355840] INFO perfrun.launcher <> - Exit code: 0
